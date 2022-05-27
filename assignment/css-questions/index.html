@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>css termonology</title>
+		<style>
+			body {
+				margin: 100px;
+				background-color: rgb(45, 45, 45);
+			}
+			div {
+				margin-bottom: 50px;
+			}
+			* {
+				font-family: 'Courier New', Courier, monospace;
+				color: white;
+			}
+			li {
+				font-size: large;
+				font-weight: 700;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<!-- questions -->
+			<div>
+				<h2>
+					1. What are the main differences between external, internal, and
+					inline CSS?
+				</h2>
+				<h3>
+					mainly its the place of writing css code
+					<br />
+					<ul>
+						<li>
+							inline styling: style the HTML tag and implement the style code
+							inside the opening tag
+						</li>
+						<li>
+							external styling: style the HTML file using seperated CSS file and
+							link them together
+						</li>
+						<li>
+							internal styling: style the HTML file inside the HTML file between
+							the head tag by adding <code>style tag </code>
+						</li>
+					</ul>
+				</h3>
+			</div>
+
+			<div>
+				<h2>2. What is the syntax for class and ID selectors?</h2>
+				<h3>
+					<ul>
+						<li>ID: <code>#id_name</code></li>
+						<li>Class: <code> .class_name</code></li>
+					</ul>
+				</h3>
+			</div>
+			<div>
+				<h2>
+					3. How would you apply a single rule to two different selectors?
+				</h2>
+				<h3>
+					using ',' like this: <code> selector_one, selector_two {}</code>
+				</h3>
+			</div>
+			<div>
+				<h2>
+					4. Given an element that has an id of title and a class of primary,
+					how would you use both attributes for a single rule?
+				</h2>
+				<h3>
+					<code>#title, .primary {}</code>
+				</h3>
+			</div>
+			<div>
+				<h2>5. What does the descendant combinator do?</h2>
+				<h3>
+					its basically a way to style a all childs elements inside the first
+					selector mentioned (the parent)
+				</h3>
+			</div>
+			<div>
+				<h2>
+					6. Between a rule that uses one class selector and a rule that uses
+					three type selectors, which rule has the higher specificity?
+				</h2>
+				<h3>the one that has 3 selectors</h3>
+			</div>
+			<div>
+				<h2>
+					7. From inside to outside, what is the order of box-model properties?
+				</h2>
+				<ol>
+					<li>content</li>
+					<li>padding</li>
+					<li>border</li>
+					<li>margin</li>
+				</ol>
+			</div>
+
+			<!-- not answerd -->
+			<div>
+				<h2>8. What does the box-sizing CSS property do?</h2>
+				<h3>
+					it give us the total width and height of the element without mixing it
+					with the margins and paddings
+				</h3>
+			</div>
+			<div>
+				<h2>
+					9. What is the difference between the standard and alternative box
+					model?
+				</h2>
+
+				<ul>
+					<li>
+						standard box model: add the border side to the height and width of
+						the actual element
+					</li>
+					<li>
+						alternative box model: it give some of the height and width of the
+						elementand give some of it for the border size
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2>
+					10. Would you use margin or padding to create more space between 2
+					elements?
+				</h2>
+				<h3>both of them will make a space but i prefer margin in this case</h3>
+			</div>
+			<div>
+				<h2>
+					11. Would you use margin or padding to create more space between the
+					contents of an element and its border?
+				</h2>
+				<h3>padding</h3>
+			</div>
+			<div>
+				<h2>
+					12. Would you use margin or padding if you wanted two elements to
+					overlap each other?
+				</h2>
+				<h3>margin and i will give it a negative value</h3>
+			</div>
+			<div>
+				<h2>
+					13. What is the difference between a block element and an inline
+					element?
+				</h2>
+
+				<ul>
+					<li>
+						block element: it takes the full width of its container and take a
+						new line
+					</li>
+					<li>
+						inline element: it present in the same line as its container and it
+						take the width of the conent
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2>
+					14. What is the difference between an inline element and an
+					inline-block element?
+				</h2>
+				<ul>
+					<li>
+						inline-block: the width and the height can be specified , the top
+						and bottom margins/paddings are respected
+					</li>
+					<li>
+						inline element: the top and bottom margins/paddings are not
+						respected
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h2>15. Is an h1 block or inline?</h2>
+				<h3>block</h3>
+			</div>
+			<div>
+				<h2>16. Is button block or inline?</h2>
+				<h3>inline</h3>
+			</div>
+			<div>
+				<h2>17. Is div block or inline?</h2>
+				<h3>block</h3>
+			</div>
+			<div>
+				<h2>18. Is span block or inline?</h2>
+				<h3>inline</h3>
+			</div>
+			<div>
+				<h2>
+					19. What’s the difference between a flex container and a flex item?
+				</h2>
+				<h3>
+					the flex container is the parent and the container that we will
+					specify the styles of the flex box in bu the flex item are the
+					children of the flex container and the elements that will be
+					positioned in the flex container
+				</h3>
+			</div>
+			<div>
+				<h2>20. How do you create a flex item?</h2>
+				<h3>
+					wrap the element inside a container and give the container
+					"display:flex" property
+				</h3>
+			</div>
+			<div>
+				<h2>
+					21. What are the 3 values defined in the shorthand flex property?
+				</h2>
+				<ul>
+					<li>flex-grow</li>
+					<li>flex-shrink</li>
+					<li>flexbasis</li>
+				</ul>
+			</div>
+			<div>
+				<h2>
+					22. How do you make flex items arrange themselves vertically instead
+					of horizontally?
+				</h2>
+				<h3>
+					give the flex container this properity "align-items" instead of
+					"justify-content"
+				</h3>
+			</div>
+			<div>
+				<h2>
+					23. What is the difference between justify-content and align-items?
+				</h2>
+				<ul>
+					<li><code>justify-content: align the items horizontally</code></li>
+					<li><code>align-items: align the items vertically</code></li>
+				</ul>
+			</div>
+			<div>
+				<h2>
+					24. How do you use flexbox to completely center a div inside a flex
+					container?
+				</h2>
+				<h3>go to flex container and apply this styles:</h3>
+				<code
+					>display: flex ;<br />
+					justify-content:center ; <br />
+					align-items: center;<br />
+					height:100vh; <br />
+				</code>
+			</div>
+			<div>
+				<h2>
+					25. What’s the difference between justify-content: space-between and
+					justify-content: space-around?
+				</h2>
+				<ul>
+					<li>
+						"justify-content:space-between": gives a space between the flex
+						items
+					</li>
+					<li>
+						"justify-content:space-around": gives a space around the flex items
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
